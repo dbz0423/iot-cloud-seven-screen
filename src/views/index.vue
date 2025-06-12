@@ -63,10 +63,6 @@
             </div>
             <!-- 中间 -->
             <div>
-              <center />
-            </div>
-            <!-- 中间 -->
-            <div>
               <dv-border-box-13>
                 <centerRight1 />
               </dv-border-box-13>
@@ -78,9 +74,9 @@
             <dv-border-box-13>
               <bottomLeft />
             </dv-border-box-13>
-            <dv-border-box-12>
+            <!-- <dv-border-box-12>
               <bottomRight />
-            </dv-border-box-12>
+            </dv-border-box-12> -->
           </div>
         </div>
       </div>
@@ -94,9 +90,8 @@ import { formatTime } from "../utils/index.js";
 import centerLeft1 from "./centerLeft1";
 import centerLeft2 from "./centerLeft2";
 import centerRight1 from "./centerRight1";
-import center from "./center";
 import bottomLeft from "./bottomLeft";
-import bottomRight from "./bottomRight";
+// import bottomRight from "./bottomRight";
 
 export default {
   mixins: [drawMixin],
@@ -115,9 +110,8 @@ export default {
     centerLeft1,
     centerLeft2,
     centerRight1,
-    center,
     bottomLeft,
-    bottomRight,
+    // bottomRight,
   },
   mounted() {
     this.timeFn();

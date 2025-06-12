@@ -16,3 +16,11 @@ export function getTenantDeviceCount() {
     method: 'get'
   })
 }
+
+// 获取告警日志
+export function getAlarmLogs() {
+  return request({
+    url: `${API_PREFIX.SCREEN}/alarm/logs`,
+    method: 'get'
+  })
+}
